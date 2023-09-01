@@ -3,7 +3,10 @@ const nextConfig = {
   reactStrictMode: false,
   images: {
     domains: ['via.placeholder.com', 'localhost'],
+    unoptimized:true
   },
+  output: 'export',
+  distDir: 'dist',
   // comment for render twice issue
   // avoid cors with proxy
   // async rewrites() {
@@ -15,5 +18,4 @@ const nextConfig = {
   //   ]
   // },
 }
-
 module.exports = nextConfig
