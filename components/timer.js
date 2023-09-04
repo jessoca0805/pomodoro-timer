@@ -32,7 +32,7 @@ export default function Timer() {
 
   return (
     <>
-      <div className="timer-container">
+      <div className="timer-container ">
         <h1>{formatTime(countDown)}</h1>
         <h3>What to do next?</h3>
         <div className="d-flex  justify-content-center">
@@ -49,10 +49,11 @@ export default function Timer() {
         <h6>Keep going!</h6>
         </div>
         <div className="progress-bar">
-        <BiRun />
+        <div className="d-flex"><BiRun />
         <div className='progress-bar'></div>
         {/* <BiDotsHorizontalRounded /> */}
-        <GiStarFlag />
+        <GiStarFlag /></div>
+       
         </div>
       </div>
     </>
